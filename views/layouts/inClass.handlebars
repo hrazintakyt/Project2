@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Boot Camp Huddle</title>
+    <!-- Favicon -->
+    <link rel="icon" type="icon/ico" href="./img/images/bch.ico">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-xyMU7RufUdPGVOZRrc2z2nRWVWBONzqa0NFctWglHmt5q5ukL22+lvHAqhqsIm3h"
+        crossorigin="anonymous"> {{!--
+    <link href="./css/all.css" rel="stylesheet"> --}}
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="./css/mdb.css" rel="stylesheet">
+    <!-- Timer -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="./css/circular-countdown.css">
+    <!-- Emoji Picker -->
+    {{!--
+    <link href="./css/emoji.css" rel="stylesheet"> --}}
+    <!-- Our Styles -->
+    <link href="./css/style.min.css" rel="stylesheet">
+    <link href="./css/no-scroll.css" rel="stylesheet">
+</head>
+
+<body class="hidden-sn elegant-color-dark">
+    <!-- Preloader -->
+    <!-- <div id="mdb-preloader" class="flex-center">
+        <div id="preloader-markup">
+        </div>
+    </div> -->
+    <!-- /Preloader -->
+
+    {{{body}}}
+
+    <!-- User Settings Modal -->
+    <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog cascading-modal" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Modal cascading tabs-->
+                <div class="modal-c-tabs">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs tabs-2 primary-color darken-3" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#panel7" role="tab">
+                                <i class="far fa-user-astronaut mr-1"></i>My Account</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#panel8" role="tab">
+                                <i class="fal fa-palette mr-1"></i>My Theme</a>
+                        </li>
+                    </ul>
+                    <!-- Tab panels -->
+                    <div class="tab-content">
+                        <!--Panel 7-->
+                        <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+                            <!--Body-->
+                            <div class="modal-body mb-1">
+                                <!-- Card Wider -->
+                                <div class="card card-cascade wider">
+                                    <!-- Card image -->
+                                    <div class="view view-cascade overlay">
+                                        <img id="imgSettings" style="max-width: 436px; max-height: 300px" class="card-img-top" src="#" alt="Card image cap">
+                                        <a href="#!">
+                                            <div class="mask rgba-white-slight"></div>
+                                        </a>
+                                    </div>
+                                    <!-- Card content -->
+                                    <div class="card-body card-body-cascade text-center">
+                                        <!-- Title -->
+                                        <h4 id="nameSettings" class="card-title">
+
+                                        </h4>
+                                        <!-- Subtitle -->
+                                        <h5 class="blue-text pb-2">
+                                            <strong>Student</strong>
+                                        </h5>
+                                        <h6 id="emailSettings">
+
+                                        </h6>
+                                        <!-- Text -->
+                                        <p class="card-text">I love Boot Camp Huddle!</p>
+                                        <!-- Linkedin -->
+                                        <a class="px-2 fa-lg li-ic">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                        <!-- Twitter -->
+                                        <a class="px-2 fa-lg tw-ic">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <!-- Dribbble -->
+                                        <a class="px-2 fa-lg fb-ic">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                        <!-- GiHub -->
+                                        <a class="px-2 fa-lg fb-ic">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer">
+                                <div class="options text-center mt-1">
+                                    <button class="btn btn-primary">Edit
+                                        <i class="fal fa-user-edit ml-1"></i>
+                                    </button>
+                                </div>
+                                <button type="button" class="btn btn-outline-primary waves-effect ml-auto" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        <!--/.Panel 7-->
+                        <!--Panel 8-->
+                        <div class="tab-pane fade" id="panel8" role="tabpanel">
+                            <!--Body-->
+                            <div class="modal-body">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action waves-effect" id="themeWhite">White</a>
+                                    <a href="#" class="list-group-item list-group-item-action waves-effect" id="themeBlack">Black</a>
+                                    <a href="#" class="list-group-item list-group-item-action waves-effect" id="themeCyan">Cyan</a>
+                                    <a href="#" class="list-group-item list-group-item-action waves-effect" id="themeMDB">Cool Blue</a>
+                                    <a href="#" class="list-group-item list-group-item-action waves-effect" id="themeDeepPurple">Deep Purple</a>
+                                    <a href="#" class="list-group-item list-group-item-action waves-effect" id="themeNavyBlue">Light Blue</a>
+                                    <a href="#" class="list-group-item list-group-item-action waves-effect" id="themePink">Pink</a>
+                                    <a href="#" class="list-group-item list-group-item-action waves-effect" id="themeIndigo">Indigo</a>
+                                    <a href="#" class="list-group-item list-group-item-action waves-effect" id="themeLightBlue">Navy Blue</a>
+                                    <a href="#" class="list-group-item list-group-item-action waves-effect" id="themeGrey">Grey</a>
+                                </div>
+                            </div>
+                            <!--Footer-->
+                            <div class="modal-footer">
+                                <div class="options text-right">
+                                </div>
+                                <button type="button" class="btn btn-outline-primary waves-effect ml-auto" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                        <!--/.Panel 8-->
+                    </div>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+    <!-- /User Settings Modal -->
+    <!-- Concierge Modal -->
+    <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Concierge</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                        <i class="fal fa-tag prefix grey-text"></i>
+                        <input type="text" id="form32" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="form32">Subject</label>
+                    </div>
+                    <div class="md-form">
+                        <i class="fal fa-pen-fancy prefix grey-text"></i>
+                        <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                        <label data-error="wrong" data-success="right" for="form8">Your message</label>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-primary" data-dismiss="modal">Send
+                        <i class="fal fa-paper-plane ml-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Concierge Modal -->
+    <!-- Team Information Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Our Team</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Section: Team v.4 -->
+                    <section class="my-5">
+                        <!-- Section heading -->
+                        <h2 class="h1-responsive font-weight-bold text-center my-5">The Boot Camp Huddle Team</h2>
+                        <!-- Section description -->
+                        <p class="grey-text text-center w-responsive mx-auto mb-5"></p>
+                        <!-- Grid row -->
+                        <div class="row">
+                            <!-- Grid column -->
+                            <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+                                <!-- Rotating card -->
+                                <div class="card-wrapper">
+                                    <div id="card-1" class="card-rotating effect__click text-center w-100 h-100">
+                                        <!-- Front Side -->
+                                        <div class="face front">
+                                            <!-- Image -->
+                                            <div class="card-up">
+                                                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/19.jpg" alt="Team member card image">
+                                            </div>
+                                            <!-- Avatar -->
+                                            <div class="avatar mx-auto">
+                                                <img src="./img/images/pawel-hs-dt.png" class="rounded-circle img-fluid" alt="First sample avatar image">
+                                            </div>
+                                            <!-- Content -->
+                                            <div class="card-body">
+                                                <h4 class="font-weight-bold mt-1 mb-3">Pawel Lyko</h4>
+                                                <p class="font-weight-bold dark-grey-text">Back-End Developer</p>
+                                                <!-- Triggering button -->
+                                                <a class="rotate-btn grey-text" data-card="card-1">
+                                                    <i class="fa fa-repeat grey-text"></i>Learn About Me</a>
+                                            </div>
+                                        </div>
+                                        <!-- Front Side -->
+                                        <!-- Back Side -->
+                                        <div class="face back">
+                                            <!-- Content -->
+                                            <div class="card-body">
+                                                <!-- Content -->
+                                                <h4 class="font-weight-bold mt-4 mb-2">
+                                                    <strong>About me</strong>
+                                                </h4>
+                                                <hr>
+                                                <p>I aspire to become a professional developer. languages: English, Spanish,
+                                                    French, Polish, Russian, Japanese, German programming languages: HTML,
+                                                    CSS, JS, NODE.JS, JQUERY, SQL, FIREBASE Other important abilities HTML
+                                                    (how to meet ladies)
+                                                </p>
+                                                <hr>
+                                                <!-- Social Icons -->
+                                                <ul class="list-inline list-unstyled">
+                                                    <li class="list-inline-item">
+                                                        <a class="p-2 fa-lg fb-ic">
+                                                            <i class="fab fa-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="p-2 fa-lg git-ic" href="https://github.com/hrazintakyt" target="_blank">
+                                                            <i class="fab fa-github"> </i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="p-2 fa-lg li-ic">
+                                                            <i class="fab fa-linkedin"> </i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="p-2 fa-lg tw-ic">
+                                                            <i class="fab fa-twitter"> </i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <!-- Triggering button -->
+                                                <a class="rotate-btn grey-text" data-card="card-1">
+                                                    <i class="fa fa-repeat grey-text"></i> Click here to rotate back</a>
+                                            </div>
+                                        </div>
+                                        <!-- Back Side -->
+                                    </div>
+                                </div>
+                                <!-- Rotating card -->
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+                                <!-- Rotating card -->
+                                <div class="card-wrapper">
+                                    <div id="card-2" class="card-rotating effect__click text-center w-100 h-100">
+                                        <!-- Front Side -->
+                                        <div class="face front">
+                                            <!-- Image -->
+                                            <div class="card-up">
+                                                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/82.jpg." alt="Team member card image">
+                                            </div>
+                                            <!-- Avatar -->
+                                            <div class="avatar mx-auto">
+                                                <img src="./img/images/blaise-hs-dt.png" class="rounded-circle" alt="Second sample avatar image">
+                                            </div>
+                                            <!-- Content -->
+                                            <div class="card-body">
+                                                <h4 class="font-weight-bold mt-1 mb-3">Blaise Kress</h4>
+                                                <p class="font-weight-bold dark-grey-text">Back-End Developer</p>
+                                                <!-- Triggering button -->
+                                                <a class="rotate-btn grey-text" data-card="card-2">
+                                                    <i class="fa fa-repeat grey-text"></i>Learn About Me</a>
+                                            </div>
+                                        </div>
+                                        <!-- Front Side -->
+                                        <!-- Back Side -->
+                                        <div class="face back">
+                                            <!-- Content -->
+                                            <div class="card-body">
+                                                <!-- Content -->
+                                                <h4 class="font-weight-bold mt-4 mb-2">
+                                                    <strong>About me</strong>
+                                                </h4>
+                                                <hr>
+                                                <p>Aspiring to be a Full Stack Developer, and eventually looking to get into
+                                                    cyber security.
+                                                </p>
+                                                <hr>
+                                                <!-- Social Icons -->
+                                                <ul class="list-inline list-unstyled">
+                                                    <li class="list-inline-item">
+                                                        <a class="p-2 fa-lg fb-ic">
+                                                            <i class="fab fa-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="p-2 fa-lg git-ic" href="https://github.com/BlaiseAK" target="_blank">
+                                                            <i class="fab fa-github"> </i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="p-2 fa-lg li-ic">
+                                                            <i class="fab fa-linkedin"> </i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="p-2 fa-lg tw-ic">
+                                                            <i class="fab fa-twitter"> </i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <!-- Triggering button -->
+                                                <a class="rotate-btn grey-text" data-card="card-2">
+                                                    <i class="fa fa-repeat grey-text"></i> Click here to rotate back</a>
+                                            </div>
+                                        </div>
+                                        <!-- Back Side -->
+                                    </div>
+                                </div>
+                                <!-- Rotating card -->
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="col-lg-4 col-md-12">
+                                <!-- Rotating card -->
+                                <div class="card-wrapper">
+                                    <div id="card-3" class="card-rotating effect__click text-center w-100 h-100">
+                                        <!-- Front Side -->
+                                        <div class="face front">
+                                            <!-- Image -->
+                                            <div class="card-up">
+                                                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(14).jpg" alt="Team member card image">
+                                            </div>
+                                            <!-- Avatar -->
+                                            <div class="avatar mx-auto">
+                                                <img src="./img/images/stewart-hs-dt.png" class="rounded-circle img-fluid" alt="Third sample avatar image">
+                                            </div>
+                                            <!-- Content -->
+                                            <div class="card-body">
+                                                <h4 class="font-weight-bold mt-1 mb-3">Stewart Capps</h4>
+                                                <p class="font-weight-bold dark-grey-text">Back-End Developer</p>
+                                                <!-- Triggering button -->
+                                                <a class="rotate-btn grey-text" data-card="card-3">
+                                                    <i class="fa fa-repeat grey-text"></i>Learn About Me</a>
+                                            </div>
+                                        </div>
+                                        <!-- Front Side -->
+                                        <!-- Back Side -->
+                                        <div class="face back">
+                                            <!-- Content -->
+                                            <div class="card-body">
+                                                <!-- Content -->
+                                                <h4 class="font-weight-bold mt-4 mb-2">
+                                                    <strong>About me</strong>
+                                                </h4>
+                                                <hr>
+                                                <p>"I asked Stewart to give me a short bio for the Team Page and he told me
+                                                    he's too busy coding. This should give some insight into his work ethic."
+                                                </p>
+                                                <hr>
+                                                <!-- Social Icons -->
+                                                <ul class="list-inline list-unstyled">
+                                                    <li class="list-inline-item">
+                                                        <a class="p-2 fa-lg fb-ic">
+                                                            <i class="fab fa-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="p-2 fa-lg git-ic" href="https://github.com/StewartBC" target="_blank">
+                                                            <i class="fab fa-github"> </i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="p-2 fa-lg li-ic">
+                                                            <i class="fab fa-linkedin"> </i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="p-2 fa-lg tw-ic">
+                                                            <i class="fab fa-twitter"> </i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <!-- Triggering button -->
+                                                <a class="rotate-btn grey-text" data-card="card-3">
+                                                    <i class="fa fa-repeat grey-text"></i> Click here to rotate back</a>
+                                            </div>
+                                        </div>
+                                        <!-- Back Side -->
+                                    </div>
+                                </div>
+                                <!-- Rotating card -->
+                            </div>
+                            <!-- Grid column -->
+                        </div>
+                        <!-- Grid row -->
+                        <br>
+                        <!-- Grid row -->
+                        <div class="row">
+                            <div class="col-lg-2 col-md-0 mb-lg-0 mb-2"></div>
+                            <!-- Grid column -->
+                            <div class="col-lg-4 col-md-12 mb-lg-0 mb-4">
+                                <!-- Rotating card -->
+                                <div class="card-wrapper">
+                                    <div id="card-4" class="card-rotating effect__click text-center w-100 h-100">
+                                        <!-- Front Side -->
+                                        <div class="face front">
+                                            <!-- Image -->
+                                            <div class="card-up">
+                                                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/82.jpg." alt="Team member card image">
+                                            </div>
+                                            <!-- Avatar -->
+                                            <div class="avatar mx-auto">
+                                                <img src="./img/images/adam-hs-dt.png" class="rounded-circle" alt="Second sample avatar image">
+                                            </div>
+                                            <!-- Content -->
+                                            <div class="card-body">
+                                                <h4 class="font-weight-bold mt-1 mb-3">Adam Pegram</h4>
+                                                <p class="font-weight-bold dark-grey-text">Front-End Developer</p>
+                                                <!-- Triggering button -->
+                                                <a class="rotate-btn grey-text" data-card="card-4">
+                                                    <i class="fa fa-repeat grey-text"></i>Learn About Me</a>
+                                            </div>
+                                        </div>
+                                        <!-- Front Side -->
+                                        <!-- Back Side -->
+                                        <div class="face back">
+                                            <!-- Content -->
+                                            <div class="card-body">
+                                                <!-- Content -->
+                                                <h4 class="font-weight-bold mt-4 mb-2">
+                                                    <strong>About me</strong>
+                                                </h4>
+                                                <hr>
+                                                <p>When I'm not coding, I'm spending time exploring new restaurants & venues
+                                                    here in Charlotte. Love visiting new cities. Currently seeking opportunities
+                                                    to start my career in Full Stack Web Development!
+                                                </p>
+                                                <hr>
+                                                <!-- Social Icons -->
+                                                <ul class="list-inline list-unstyled">
+                                                    <li class="list-inline-item">
+                                                        <a class="p-2 fa-lg fb-ic">
+                                                            <i class="fab fa-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="p-2 fa-lg git-ic" href="https://github.com/APegram" target="_blank">
+                                                            <i class="fab fa-github"> </i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="p-2 fa-lg li-ic">
+                                                            <i class="fab fa-linkedin"> </i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="p-2 fa-lg tw-ic">
+                                                            <i class="fab fa-twitter"> </i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <!-- Triggering button -->
+                                                <a class="rotate-btn grey-text" data-card="card-4">
+                                                    <i class="fa fa-repeat grey-text"></i> Click here to rotate back</a>
+                                            </div>
+                                        </div>
+                                        <!-- Back Side -->
+                                    </div>
+                                </div>
+                                <!-- Rotating card -->
+                            </div>
+                            <!-- Grid column -->
+                            <!-- Grid column -->
+                            <div class="col-lg-4 col-md-12">
+                                <!-- Rotating card -->
+                                <div class="card-wrapper">
+                                    <div id="card-5" class="card-rotating effect__click text-center w-100 h-100">
+                                        <!-- Front Side -->
+                                        <div class="face front">
+                                            <!-- Image -->
+                                            <div class="card-up">
+                                                <img class="card-img-top" src="./img/images/stephen-bg-dt.jpg" alt="Team member card image">
+                                            </div>
+                                            <!-- Avatar -->
+                                            <div class="avatar mx-auto">
+                                                <img src="./img/images/stephen-hs-dt.jpg" class="rounded-circle img-fluid" alt="Third sample avatar image">
+                                            </div>
+                                            <!-- Content -->
+                                            <div class="card-body">
+                                                <h4 class="font-weight-bold mt-1 mb-3">Stephen Hodges</h4>
+                                                <p class="font-weight-bold dark-grey-text">Front-End Developer</p>
+                                                <!-- Triggering button -->
+                                                <a class="rotate-btn grey-text" data-card="card-5">
+                                                    <i class="fa fa-repeat grey-text"></i>Learn About Me</a>
+                                            </div>
+                                        </div>
+                                        <!-- Front Side -->
+                                        <!-- Back Side -->
+                                        <div class="face back">
+                                            <!-- Content -->
+                                            <div class="card-body">
+                                                <!-- Content -->
+                                                <h4 class="font-weight-bold mt-4 mb-2">
+                                                    <strong>About me</strong>
+                                                </h4>
+                                                <hr>
+                                                <p><strong>
+
+                                                    <span class="cyan-text"><em>while</em></span> <span class="yellow-text">(</span><span class="pink-text">alive</span><span class="yellow-text">) {</span>
+                                                </strong>
+                                                </p>
+                                                <p><strong>
+
+                                                    <span class="indigo-text">believe</span><span class="purple-text">()</span><span class="cyan-text">;</span>
+                                                </strong>
+                                                </p>
+                                                <p><strong>
+
+                                                    <span class="indigo-text">eat</span><span class="purple-text">()</span><span class="cyan-text">;</span>
+                                                </strong>
+                                                </p>
+                                                <p><strong>
+
+                                                    <span class="indigo-text">sleep</span><span class="purple-text">()</span><span class="cyan-text">;</span>
+                                                </strong>
+                                                </p>
+                                                <p><strong>
+
+                                                    <span class="indigo-text">code</span><span class="purple-text">()</span><span class="cyan-text">;</span>
+                                                </strong>
+                                                </p>
+                                                <p><strong>
+
+                                                    <span class="indigo-text">jest</span><span class="purple-text">()</span><span class="cyan-text">;</span>
+                                                </strong>
+                                                </p>
+                                                <p><strong>
+
+                                                    <span class="yellow-text">}</span><span class="cyan-text">;</span>
+                                                </strong>
+                                                </p>
+                                                <hr>
+                                                <!-- Social Icons -->
+                                                <ul class="list-inline list-unstyled">
+                                                    <li class="list-inline-item">
+                                                        <a class="p-2 fa-lg fb-ic" href="https://www.facebook.com/shodgesio" target="_blank">
+                                                            <i class="fab fa-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="p-2 fa-lg git-ic" href="https://github.com/shodgesio" target="_blank">
+                                                            <i class="fab fa-github"> </i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="p-2 fa-lg li-ic" href="https://www.linkedin.com/in/shodgesio/" target="_blank">
+                                                            <i class="fab fa-linkedin"> </i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a class="p-2 fa-lg tw-ic" href="https://twitter.com/shodgesio" target="_blank">
+                                                            <i class="fab fa-twitter"> </i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <!-- Triggering button -->
+                                                <a class="rotate-btn grey-text" data-card="card-5">
+                                                    <i class="fa fa-repeat grey-text"></i> Click here to rotate back</a>
+                                            </div>
+                                        </div>
+                                        <!-- Back Side -->
+                                    </div>
+                                </div>
+                                <!-- Rotating card -->
+                            </div>
+                            <!-- Grid column -->
+                        </div>
+                        <!-- Grid row -->
+                    </section>
+                    <!-- Section: Team v.4 -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Team Information Modal -->
+    <audio id="bells" src="./sound/bells.mp3"></audio>
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-4 mt-5">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+            <!-- Footer links -->
+            <div class="row text-center text-md-left mt-3 pb-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase font-weight-bold">Boot Camp Huddle</h6>
+                    <hr class="blue-gradient mb-4 mt-0 d-inline-block mx-auto w-100">
+                    <p>
+                        <a href="https://github.com/shodgesio/ProjectTwo" target="_blank">View our project on GitHub!</a>
+                        </p>
+                    <p>
+                        <a href="#!" data-toggle="modal" data-target="#exampleModal">Meet the Team</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mt-3">
+                    <img src="./img/images/bch-rocket-hi-res.png" class="m-auto flex-center" style="max-height: 70px;">
+                </div>
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase font-weight-bold">Resources</h6>
+                    <hr class="blue-gradient mb-4 mt-0 d-inline-block mx-auto w-100">
+                    <p>
+                        <a href="https://unchar.bootcampcontent.com/The-Coding-Bootcamp/UNCCHAR201805FSF3-FT" target="_blank">GitLab</a>
+                    </p>
+                    <p>
+                        <a href="https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%227e92cf18-d4c9-4ccc-b193-a8e800fcb2ef%22"
+                            target="_blank">Panopto</a>
+                    </p>
+                    <p>
+                        <a href="https://bootcampspot-v2.com/" target="_blank">Bootcamp Spot</a>
+                    </p>
+                    <p>
+                        <a href="https://github.com/" target="_blank">GitHub</a>
+                    </p>
+                    <p>
+                        <a href="#!" target="_blank">Heroku</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+            </div>
+            <!-- Footer links -->
+            <hr>
+            <!-- Grid row -->
+            <div class="row d-flex align-items-center">
+                <!-- Grid column -->
+                <div class="col-md-7 col-lg-8">
+                    <!--Copyright-->
+                    <p class="text-center text-md-left">
+                        &copy;
+                        <script>document.write(new Date().getFullYear());</script>,
+                        <strong>BootCampHuddle.com</strong>
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-5 col-lg-4 ml-lg-0">
+                    <!-- Social buttons -->
+                    <div class="text-center text-md-right">
+                    </div>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+    </footer>
+    <!-- Footer -->
+    <!-- SCRIPTS -->
+    <!-- Font Awesome -->
+    <script type="text/javascript" src="./js/all.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="./js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="./js/mdb.min.js"></script>
+    <!-- Timer -->
+    <script type="text/javascript" src="./js/jquery.circular-countdown.js"></script>
+    <!-- Emoji Picker -->
+    {{!--
+    <script type="text/javascript" src="./js/config.js"></script>
+    <script type="text/javascript" src="./js/util.js"></script>
+    <script type="text/javascript" src="./js/jquery.emojiarea.js"></script>
+    <script type="text/javascript" src="./js/emoji-picker.js"></script> --}}
+    <!-- MomentJS -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!-- UI/UX -->
+    <script type="text/javascript" src="./js/uiux.js"></script>
+    <script type="text/javascript" src="./js/members.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="./js/inclass.js"></script>
+</body>
+
+</html>

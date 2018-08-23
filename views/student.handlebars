@@ -1,0 +1,265 @@
+<!--Double navigation-->
+<header>
+    <!-- Sidebar navigation -->
+    <div id="slide-out" class="side-nav sn-bg-4">
+        <ul class="custom-scrollbar">
+            <!-- Logo -->
+            <li>
+                <div class="logo-wrapper waves-light">
+                    <a href="#">
+                        <img src="./img/images/bch-hi-res.png" class="img-fluid flex-center">
+                    </a>
+                </div>
+            </li>
+            <!--/. Logo -->
+            <!--Social-->
+            <li>
+                <ul class="social">
+                    <li>
+                        <a href="#" class="icons-sm reddit-ic">
+                            <i class="fab fa-gitlab"> </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="icons-sm git-ic">
+                            <i class="fab fa-github"> </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="icons-sm slack-ic">
+                            <i class="fas fa-video"> </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="icons-sm vk-ic">
+                            <i class="fas fa-chevron-double-down"> </i>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!--/Social-->
+            <!--Search Form-->
+            <li>
+                <form class="search-form" role="search">
+                    <div class="form-group md-form mt-0 pt-1 waves-light">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </form>
+            </li>
+            <!--/.Search Form-->
+            <!-- Side navigation links -->
+            <!--/. Side navigation links -->
+        </ul>
+        <div class="sidenav-bg mask-strong"></div>
+    </div>
+    <!--/. Sidebar navigation -->
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+        <!-- SideNav slide-out button -->
+        <div class="float-left">
+            <a href="#" data-activates="slide-out" class="button-collapse">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- Breadcrumb-->
+        <div class="breadcrumb-dn mr-auto">
+            <p>Bootcamp Huddle</p>
+        </div>
+        <ul class="nav navbar-nav nav-flex-icons ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="far fa-user-astronaut"></i>
+                    <span class="clearfix d-none d-sm-inline-block">Account</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalLRForm">
+                        <i class="far fa-cogs"></i>
+                        <span class="clearfix d-none d-sm-inline-block">Settings</span>
+                    </a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalContactForm">
+                        <i class="fas fa-concierge-bell"></i>
+                        <span class="clearfix d-none d-sm-inline-block">Support</span>
+                    </a>
+                    <a class="dropdown-item" href="/logout">
+                        <i class="fal fa-sign-out-alt"></i>
+                        <span class="clearfix d-none d-sm-inline-block">Sign out</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!-- /.Navbar -->
+</header>
+<!--/Double navigation-->
+<!--Main Layout-->
+<main>
+    <div class="container">
+        <!-- Section: Contact v.3 -->
+        <section class="my-5">
+            <!-- Form with header -->
+            <div class="card sunny-morning-gradient">
+                <!-- Grid row -->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-lg-8">
+                        <div class="card-body form">
+                            <article id="markdown" class="markdown-body">
+                                <h2 id="students-do-first-stand-up">Students Do: First Stand-up</h2>
+                                <ul>
+                                    <li id="description">In this activity you will take part in your first stand-up with your group mates. Regular
+                                        stand-ups help ensure everyone is on the same page with what they are working on
+                                        and everyone gets help they might need.</li>
+                                </ul>
+                                <h2>Instructions
+                                    <button class="btn young-passion-gradient btn-sm" data-toggle="modal" data-target="#modalStudentQuestion">
+                                        <i class="fas fa-question"></i>
+                                </h2>
+                                </button>
+                                <ul style="list-style: none;" id="instructionsList">
+                                    <li>
+                                        <p>Before your first stand-up, each member of the team should go through the "To Do"
+                                            column of the project board and self-assign at least one issue.</p>
+                                        <ul>
+                                            <li>To do this, click on the issue and on the right choose "self-assign".</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Everyone should have a clear idea of what they think they can accomplish today. Now
+                                            it's time for your first stand-up!</p>
+                                    </li>
+                                    <li>
+                                        <p>Stand if you are able - yep, stand-ups take place standing; this helps to ensure
+                                            that the meetings are short and to the point.</p>
+                                    </li>
+                                    <li>
+                                        <p>Each member of the team should say:</p>
+                                        <ul>
+                                            <li>What they did yesterday</li>
+                                            <li>What they plan to do today</li>
+                                            <li>What, if anything, is blocking their progress.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Stand-ups should be held
+                                            <strong>daily</strong> from this point forward - yes even days that you don't have class
+                                            (use Slack or Google Hangouts).</p>
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col offset-4" style="overflow: hidden;">
+                                <div id="multisize">
+                                    <div class="wrapper">
+                                        <!-- Countdown -->
+                                        <div class="countdown multisize"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+            <!-- Form with header -->
+        </section>
+        <!-- Section: Contact v.3 -->
+    </div>
+    <div class="container">
+        <div class="col-lg-12 col-md-12 mb-lg-0 mb-4">
+            <!-- Rotating card -->
+            <div class="card-wrapper">
+                <div id="chat-rotate" class="card-rotating effect__click w-100 h-100">
+                    <!-- Front Side -->
+                    <div class="face front">
+                        <!-- Content -->
+                        <div class="card-body mx-auto">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="d-flex justify-content-start float-left text-white px-4 my-3">
+                                                    <h3 class="card-title font-bold">
+                                                        <strong>#in-class</strong>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container" id="in-class-chat">
+                                            <!-- Team Chat Box -->
+                                            <div class="elegant-color-dark text-white py-5 px-4 my-3">
+                                                <!-- All messages area -->
+                                                <div id="chat" style="height: 140px; overflow: scroll;">
+                                                    <!-- In-class messages will be appended here -->
+                                                    {{#each chats}}
+                                                    <p>
+                                                        <span>
+                                                            <div class="chip chip-md peach-gradient darken-2 white-text">
+                                                                <img src="./img/images/einstein.jpg" alt={{name}}> {{name}}
+                                                            </div>
+                                                            <span>{{text}}</span>
+                                                        </span>
+                                                    </p>
+                                                    {{/each}}
+                                                </div>
+                                                <!-- /All messages area -->
+                                                <!-- Message entry area -->
+                                                <div>
+                                                    <div class="md-form primary-textarea active-primary-textarea">
+                                                        <textarea type="text" id="chats" class="md-textarea form-control" rows="1" data-emojiable="true"></textarea>
+                                                        <label for="form22">Type your message...</label>
+                                                    </div>
+                                                </div>
+                                                <!-- /Message entry area -->
+                                            </div>
+                                            <!-- /Team Chat Box -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Front Side -->
+                    <!-- Back Side -->
+                    <!-- Back Side -->
+                </div>
+            </div>
+            <!-- Rotating card -->
+        </div>
+    </div>
+</main>
+<!-- /Main Layout -->
+<!-- Student Question Modal -->
+<div class="modal fade" id="modalStudentQuestion" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Request Help</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body mx-3">
+                <div class="md-form">
+                    <i class="fas fa-question prefix grey-text"></i>
+                    <textarea type="text" id="studentQuestion" class="md-textarea form-control" rows="4"></textarea>
+                    <label data-error="wrong" data-success="right" for="form8">Your question</label>
+                </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button id="createComment" class="btn btn-primary" data-dismiss="modal">
+                    <i class="fal fa-paper-plane"></i>
+                </button>
+                <button class="btn btn-outline-primary" data-dismiss="modal">
+                    <i class="fas fa-window-close"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Student Question Modal -->

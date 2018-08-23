@@ -1,0 +1,307 @@
+<!-- Start your project here-->
+<div class="row">
+    <div class="col-md-4 bch-left">
+
+    </div>
+    <div style="height: 100vh" class="col-md-8 blue-gradient">
+
+
+
+        <div class="flex-center flex-column blue-gradient">
+            <h1 class="animated fadeIn mb-4 text-pacifico">Boot Camp Huddle</h1>
+
+            <h3 class="animated fadeIn mb-3 text-pacifico">A Refreshing Learning Experience</h3>
+
+            <p class="animated fadeIn text-pacifico bch-team">-B.C.H. Team</p>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="row bch-mainContent">
+
+                <div id="bch-mainMenu" class="flex-column flex-center center-block center-content">
+
+                    <button type="button" id="bch-register" class="btn btn-outline-dark btn-rounded waves-effect">Register</button>
+                    <br>
+                    <button type="button" class="btn btn-outline-dark btn-rounded waves-effect bch-login">Login</button>
+
+                </div>
+
+                <div id="bch-createAccount" class="col bch-hide">
+                    <!-- Material form login -->
+                    <form>
+                        <p class="h4 text-center mb-4">Create Account</p>
+                        <div class="md-form">
+                            <i class="fa fa-user prefix white-text"></i>
+                            <input type="text" id="userName" class="form-control">
+                            <label for="userName" class="white-text">Your Name</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fa fa-user-secret prefix white-text"></i>
+                            <input type="text" id="displayName" class="form-control">
+                            <label for="displayName" class="white-text">Your Display Name</label>
+                        </div>
+                        <!-- Material input email -->
+                        <div class="md-form">
+                            <i class="fa fa-envelope prefix white-text"></i>
+                            <input type="email" id="userEmail" class="form-control">
+                            <label for="userEmail" class="white-text">Your email</label>
+                        </div>
+
+                        <!-- Material input password -->
+                        <div class="md-form">
+                            <i class="fa fa-lock prefix white-text"></i>
+                            <input type="password" id="userPW" class="form-control">
+                            <label for="userPW" class="white-text">Your password</label>
+                        </div>
+
+                        <div class="md-form">
+                            <i class="fa fa-lock prefix white-text"></i>
+                            <input type="password" id="v-userPW" class="form-control">
+                            <label for="v-userPW" class="white-text">Verify password</label>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button id="reg-escape" class=".mainEscape btn btn-default">Back</button>
+                            <button id="reg-to-login" class="btn btn-default" type="submit">Create Account</button>
+                        </div>
+                    </form>
+                    <!-- Material form login -->
+                </div>
+
+                <div id="bch-loginMenu" class="col bch-hide">
+                    <!-- Material form login -->
+                    <form>
+                        <p class="h4 text-center mb-4">Sign in</p>
+
+                        <!-- Material input email -->
+                        <div class="md-form">
+                            <i class="fa fa-envelope prefix white-text"></i>
+                            <input type="email" id="login-userEmail" class="form-control">
+                            <label for="login-userEmail" class="white-text">Your email</label>
+                        </div>
+
+                        <!-- Material input password -->
+                        <div class="md-form">
+                            <i class="fa fa-lock prefix white-text"></i>
+                            <input type="password" id="login-userPassword" class="form-control">
+                            <label for="login-userPassword" class="white-text">Your password</label>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <button id="login-escape" class=".mainEscape btn btn-default" type="submit">Back</button>
+                            <button id="login-load" class="btn btn-default" type="submit">Login</button>
+                        </div>
+                    </form>
+                    <!-- Material form login -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <!-- Username and Password Incorrect -->
+    <div class="modal fade right" id="Modal-invalidLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="t`rue">
+        <div class="modal-dialog modal-notify modal-danger modal-center" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <p class="heading">Login Failed</p>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text">&times;</span>
+                    </button>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-3">
+                            <p></p>
+                            <p class="text-center">
+                                <i class="fa fa-hand-paper-o fa-4x"></i>
+                            </p>
+                        </div>
+
+                        <div class="col-9">
+                            <p>The Username or password you submitted is incorrect. Please create an account, or try logging
+                                in again.</p>
+                            <h2>
+                                <span class="badge"></span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+                    <a type="button" id="login-again" class="btn btn-primary" data-dismiss="modal">Try Again
+                        <i class="fa ml-1"></i>
+                    </a>
+                    <a type="button" id="failed-login" class="btn btn-outline-primary waves-effect" data-dismiss="modal">Create Account</a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
+    <!-- Modal Username taken -->
+
+    <div class="modal fade left" id="Modal-pwNoMatch" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-notify modal-warning modal-center" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <p class="heading"></p>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text">&times;</span>
+                    </button>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-3 text-center">
+                            <p></p>
+                            <p class="text-center">
+                                <i class="fa fa-users fa-4x"></i>
+                            </p>
+                        </div>
+
+                        <div class="col-9">
+                            <p>Password must match. Please re-enter the password you would like to use.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+                    <a type="button" id="re-register" class="btn btn-primary">Try Again
+                        <i class="fa ml-1"></i>
+                    </a>
+                    <a type="button" class="btn btn-outline-primary waves-effect bch-login" data-dismiss="modal">Login</a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
+    <!-- Modal Blank Field -->
+
+    <div class="modal fade left" id="Modal-blankField" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-notify modal-warning modal-center" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <p class="heading"></p>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text">&times;</span>
+                    </button>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-3 text-center">
+                            <p></p>
+                            <p class="text-center">
+                                <i class="fa fa-users fa-4x"></i>
+                            </p>
+                        </div>
+
+                        <div class="col-9">
+                            <p>Please make sure all fields are populated.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+                    <a type="button" id="continue-form" class="btn btn-primary">Finish Form
+                        <i class="fa ml-1"></i>
+                    </a>
+                    <a type="button" class="btn btn-outline-primary waves-effect bch-login" data-dismiss="modal">Login</a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
+    <!-- Modal Email Taken -->
+    <div class="modal fade left" id="Modal-emailTaken" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-notify modal-warning modal-center" role="document">
+            <!--Content-->
+            <div class="modal-content">
+                <!--Header-->
+                <div class="modal-header">
+                    <p class="heading"></p>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text">&times;</span>
+                    </button>
+                </div>
+
+                <!--Body-->
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-3 text-center">
+                            <p></p>
+                            <p class="text-center">
+                                <i class="fa fa-users fa-4x"></i>
+                            </p>
+                        </div>
+
+                        <div class="col-9">
+                            <p>The email you have selected is in use or invalid. Please enter a valid email or choose another email to register with.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!--Footer-->
+                <div class="modal-footer justify-content-center">
+                    <a type="button" id="re-type-email" class="btn btn-primary">Try Again
+                        <i class="fa ml-1"></i>
+                    </a>
+                    <a type="button" class="btn btn-outline-primary waves-effect bch-login" data-dismiss="modal">Login</a>
+                </div>
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
+    <!-- /Modals -->
+
+</div>
+
+
+
+<!-- /Start your project here-->
+
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="/js/mdb.min.js"></script>
+<script src="/js/index.js"></script>
+<script type="text/javascript" src="/js/indexUI.js"></script>

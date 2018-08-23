@@ -1,0 +1,603 @@
+<!--Double navigation-->
+<header>
+    <!-- Sidebar navigation -->
+    <div id="slide-out" class="side-nav sn-bg-4">
+        <ul class="custom-scrollbar">
+            <!-- Logo -->
+            <li>
+                <div class="logo-wrapper waves-light">
+                    <a href="#">
+                        <img src="./img/images/bch-hi-res.png" class="img-fluid flex-center">
+                    </a>
+                </div>
+            </li>
+            <!--/. Logo -->
+            <!--Social-->
+            <li>
+                <ul class="social">
+                    <li>
+                        <a href="#" class="icons-sm reddit-ic">
+                            <i class="fab fa-gitlab"> </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="icons-sm git-ic">
+                            <i class="fab fa-github"> </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="icons-sm slack-ic">
+                            <i class="fas fa-video"> </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="icons-sm vk-ic">
+                            <i class="fas fa-chevron-double-down"> </i>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!--/Social-->
+            <!-- Side navigation links -->
+            <li>
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header waves-effect arrow-r">
+                            <i class="fal fa-users"></i> Class
+                            <i class="fa fa-angle-down rotate-icon"></i>
+                        </a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li>
+                                    <a href="#" class="waves-effect">
+                                        <i class="fal fa-user-graduate"></i> View Students
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="waves-effect">
+                                        <i class="fal fa-bell"></i> Send Notification</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="collapsible-header waves-effect arrow-r">
+                            <i class="fal fa-chalkboard"></i> Instruction
+                            <i class="fa fa-angle-down rotate-icon"></i>
+                        </a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li>
+                                    <a href="#" class="waves-effect" data-toggle="modal" data-target="#exerciseLauncher">
+                                        <i class="fal fa-space-shuttle"></i> Launch Exercise</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="waves-effect" data-toggle="modal" data-target="#homeworkLauncher">
+                                        <i class="fal fa-rocket"></i> Launch Homework</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <!--/. Side navigation links -->
+        </ul>
+        <div class="sidenav-bg mask-strong"></div>
+    </div>
+    <!--/. Sidebar navigation -->
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+        <!-- SideNav slide-out button -->
+        <div class="float-left">
+            <a href="#" data-activates="slide-out" class="button-collapse">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- Breadcrumb-->
+        <div class="breadcrumb-dn mr-auto">
+            <p>Bootcamp Huddle</p>
+        </div>
+        <ul class="nav navbar-nav nav-flex-icons ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fal fa-hourglass-end"></i>
+                    <span class="clearfix d-none d-sm-inline-block">Timer</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#timerLauncher">
+                        <i class="fal fa-stopwatch"></i>
+                        <span class="clearfix d-none d-sm-inline-block">Initiate Timer...</span>
+                    </a>
+                    <a class="dropdown-item" href="#" id="endTimer">
+                        <i class="fas fa-stopwatch"></i>
+                        <span class="clearfix d-none d-sm-inline-block">End Timer</span>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#" id="progressShow">
+                    <i class="fas fa-bolt ml-1"></i>
+                    Progress
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="far fa-user-astronaut"></i>
+                    <span class="clearfix d-none d-sm-inline-block">Account</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalLRForm">
+                        <i class="far fa-cogs"></i>
+                        <span class="clearfix d-none d-sm-inline-block">Settings</span>
+                    </a>
+                    <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modalContactForm">
+                        <i class="fas fa-concierge-bell"></i>
+                        <span class="clearfix d-none d-sm-inline-block">Support</span>
+                    </a>
+                    <a class="dropdown-item" href="logout">
+                        <i class="fal fa-sign-out-alt"></i>
+                        <span class="clearfix d-none d-sm-inline-block">Sign out</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!-- /.Navbar -->
+</header>
+<!--/Double navigation-->
+<!--Main Layout-->
+<main>
+    <div class="container">
+        <!-- Section: Contact v.3 -->
+        <section class="my-5">
+            <!-- Form with header -->
+            <div class="card sunny-morning-gradient">
+                <!-- Grid row -->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-lg-8">
+                        <div class="card-body form">
+                            <article id="markdown" class="markdown-body">
+                                <h2 id="students-do-first-stand-up">Students Do: First Stand-up</h2>
+                                <ul>
+                                    <li id="description">In this activity you will take part in your first stand-up with your group mates. Regular
+                                        stand-ups help ensure everyone is on the same page with what they are working on
+                                        and everyone gets help they might need.</li>
+                                </ul>
+                                <h2>Instructions</h2>
+                                <ul style="list-style: none;" id="instructionsList">
+                                    <li>
+                                        <p>Before your first stand-up, each member of the team should go through the "To Do"
+                                            column of the project board and self-assign at least one issue.</p>
+                                        <ul>
+                                            <li>To do this, click on the issue and on the right choose "self-assign".</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Everyone should have a clear idea of what they think they can accomplish today. Now
+                                            it's time for your first stand-up!</p>
+                                    </li>
+                                    <li>
+                                        <p>Stand if you are able - yep, stand-ups take place standing; this helps to ensure
+                                            that the meetings are short and to the point.</p>
+                                    </li>
+                                    <li>
+                                        <p>Each member of the team should say:</p>
+                                        <ul>
+                                            <li>What they did yesterday</li>
+                                            <li>What they plan to do today</li>
+                                            <li>What, if anything, is blocking their progress.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>Stand-ups should be held
+                                            <strong>daily</strong> from this point forward - yes even days that you don't have class
+                                            (use Slack or Google Hangouts).</p>
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div class="col offset-4" style="overflow: hidden;">
+                                <div id="multisize">
+                                    <div class="wrapper">
+                                        <!-- Countdown -->
+                                        <div class="countdown multisize"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <!-- Grid column -->
+                            <!-- <div class="col-md-10 col-xl-6 py-5"> -->
+                            <div class="col collapse animated slideinLeft" id="progressPopOut">
+                                <!--Accordion wrapper-->
+                                <div class="accordion accordion-2" id="accordionEx7" role="tablist" aria-multiselectable="true">
+                                    <!-- Accordion card -->
+                                    <div class="card tempting-azure-gradient">
+                                        <!-- Card header -->
+                                        <div class="card-header rgba-stylish-strong z-depth-1 mb-1" role="tab" id="heading1">
+                                            <a data-toggle="collapse" data-parent="#accordionEx7" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                                <h5 class="mb-0 white-text text-uppercase font-thin">
+                                                    Completed
+                                                    <i class="fa fa-angle-down rotate-icon"></i>
+                                                </h5>
+                                            </a>
+                                        </div>
+                                        <!-- Card body -->
+                                        <div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="heading1" data-parent="#accordionEx7">
+                                            <div class="card-body mb-1 rgba-grey-light">
+                                                <!-- Students that have completed the exercise will appear here -->
+                                                <ul id="completed" class="list-group list-group-flush">
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion card -->
+                                    <!-- Accordion card -->
+                                    <div class="card young-passion-gradient">
+                                        <!-- Card header -->
+                                        <div class="card-header rgba-stylish-strong z-depth-1 mb-1" role="tab" id="heading3">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx7" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                                <h5 class="mb-0 white-text text-uppercase font-thin">
+                                                    Questions
+                                                    <i class="fa fa-angle-down rotate-icon"></i>
+                                                </h5>
+                                            </a>
+                                        </div>
+                                        <!-- Card body -->
+                                        <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3" data-parent="#accordionEx7">
+                                            <div class="card-body mb-1 rgba-grey-light">
+                                                <!-- Students that have questions will appear here -->
+                                                <ul id="comments" class="list-group list-group-flush">
+                                                    {{#each comments}}
+                                                    <li class="list-group-item">
+                                                        <h5>{{name}} on Step {{stepNum}}</h5>
+                                                        <p>{{text}}</p>
+                                                    </li>
+                                                    {{/each}}
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Accordion card -->
+                                </div>
+                                <!--/.Accordion wrapper-->
+                            </div>
+                            <!-- </div> -->
+                            <!-- Grid column -->
+                        </div>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+            <!-- Form with header -->
+        </section>
+        <!-- Section: Contact v.3 -->
+    </div>
+    <div class="container">
+        <div class="col-lg-12 col-md-12 mb-lg-0 mb-4">
+            <!-- Rotating card -->
+            <div class="card-wrapper">
+                <div id="chat-rotate" class="card-rotating effect__click w-100 h-100">
+                    <!-- Front Side -->
+                    <div class="face front">
+                        <!-- Content -->
+                        <div class="card-body mx-auto">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="d-flex justify-content-start float-left text-white px-4 my-3">
+                                                    <h3 class="card-title font-bold">
+                                                        <strong>#in-class</strong>
+                                                    </h3>
+                                                </div>
+                                                <div class="d-flex justify-content-end px-4">
+                                                    <a class="rotate-btn white-text" data-card="chat-rotate">
+                                                        <i class="fas fa-quote-left fa-sm"></i> #in-structors
+                                                        <i class="fas fa-quote-right fa-sm"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container" id="in-class-chat">
+                                            <!-- Team Chat Box -->
+                                            <div class="elegant-color-dark text-white py-5 px-4 my-3">
+                                                <!-- All messages area -->
+                                                <div id="chat" style="height: 140px; overflow: scroll;">
+                                                    <!-- In-class messages will be appended here -->
+                                                    {{#each chats}}
+                                                    <p>
+                                                        <span>
+                                                            <div class="chip chip-md peach-gradient darken-2 white-text">
+                                                                <img src="./img/images/einstein.jpg" alt={{name}}> {{name}}
+                                                            </div>
+                                                            <span>{{text}}</span>
+                                                        </span>
+                                                    </p>
+                                                    {{/each}}
+                                                </div>
+                                                <!-- /All messages area -->
+                                                <!-- Message entry area -->
+                                                <div>
+                                                    <div class="md-form primary-textarea active-primary-textarea">
+                                                        <textarea type="text" id="chats" class="md-textarea form-control" rows="1" data-emojiable="true"></textarea>
+                                                        <label for="form22">Type your message...</label>
+                                                    </div>
+                                                </div>
+                                                <!-- /Message entry area -->
+                                            </div>
+                                            <!-- /Team Chat Box -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Front Side -->
+                    <!-- Back Side -->
+                    <div class="face back">
+                        <!-- Content -->
+                        <div class="card-body">
+                            <!-- Content -->
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/gradient1.jpg);">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="d-flex justify-content-start float-left text-white px-4 my-3">
+                                                    <h3 class="card-title font-bold">
+                                                        <strong>#in-structors</strong>
+                                                    </h3>
+                                                </div>
+                                                <div class="d-flex justify-content-end px-4">
+                                                    <a class="rotate-btn white-text" data-card="chat-rotate">
+                                                        <i class="fas fa-quote-left fa-sm"></i> #in-class
+                                                        <i class="fas fa-quote-right fa-sm"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container" id="in-structors-chat">
+                                            <!-- Team Chat Box -->
+                                            <div class="elegant-color-dark text-white py-5 px-4 my-3">
+                                                <!-- All messages area -->
+                                                <div id="adminChat" style="height: 140px; overflow: scroll;">
+                                                    <!-- In-structors messages will be appended here -->
+                                                </div>
+                                                <!-- /All messages area -->
+                                                <!-- Message entry area -->
+                                                <div>
+                                                    <div class="md-form primary-textarea active-primary-textarea">
+                                                        <textarea type="text" id="adminChats" class="md-textarea form-control" rows="1"></textarea>
+                                                        <label for="form22">Type your message...</label>
+                                                    </div>
+                                                </div>
+                                                <!-- /Message entry area -->
+                                            </div>
+                                            <!-- /Team Chat Box -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Back Side -->
+                </div>
+            </div>
+            <!-- Rotating card -->
+        </div>
+    </div>
+</main>
+<!-- /Main Layout -->
+<!-- Modal: Exercise Launcher -->
+<div class="modal fade left" id="exerciseLauncher" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-full-height modal-left modal-notify modal-primary" role="document">
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header young-passion-gradient">
+                <p class="heading lead">Launch Exercise
+                </p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="white-text">×</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body">
+                <div class="text-center">
+                    <i class="fal fa-code fa-4x mb-3 animated rotateIn"></i>
+                    <p>
+                        <strong>Choose an Exercise</strong>
+                    </p>
+                    <p>Select a Module to display exercises.
+                        <strong>
+                    </p>
+                    <p>
+                        </strong>Press "Launch" to deploy the exercise to the class.</strong>
+                    </p>
+                </div>
+                <hr>
+                <div class="md-form form-sm mb-5">
+                    <!--Blue select-->
+                    <!--Dropdown primary-->
+                    <div class="dropdown">
+
+                        <!--Trigger-->
+                        <button class="btn btn-block morpheus-den-gradient dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Choose Module</button>
+
+
+                        <!--Menu-->
+                        <div class="dropdown-menu dropdown-primary">
+
+                            <a class="dropdown-item selectModule" href="#" data-title="module1">01: HTML, Git, CSS</a>
+                            <a class="dropdown-item selectModule" href="#" data-title="module2">02: CSS, Bootstrap</a>
+                            <a class="dropdown-item selectModule" href="#" data-title="module3">03: JavaScript</a>
+                            <a class="dropdown-item selectModule" href="#" data-title="module4">04: jQuery</a>
+                            <a class="dropdown-item selectModule" href="#" data-title="module5">05: Timers</a>
+                            <a class="dropdown-item selectModule" href="#" data-title="module6">06: AJAX</a>
+                            <a class="dropdown-item selectModule" href="#" data-title="module7">07: Firebase</a>
+                            <a class="dropdown-item selectModule" href="#" data-title="module8">08: Project One</a>
+                            <a class="dropdown-item selectModule" href="#" data-title="module9">09: Portfolio Updates</a>
+                            <a class="dropdown-item selectModule" href="#" data-title="module10">10: Node.js</a>
+                            <a class="dropdown-item selectModule" href="#" data-title="module11">11: JS Constructors</a>
+                            <a class="dropdown-item selectModule" href="#" data-title="module12">12: MySQL</a>
+                            <a class="dropdown-item selectModule" href="#" data-title="module13">13: Express</a>
+                            <a class="dropdown-item selectModule" href="#" data-title="module14">14: Handlebars</a>
+                            <a class="dropdown-item selectModule" href="#" data-title="module15">15: Sequelize</a>
+                        </div>
+                    </div>
+                    <br>
+                    <!--/Dropdown primary-->
+                    <div class="dropdown">
+                        <button class="btn btn-block near-moon-gradient dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Exercise</button>
+                        <div class="dropdown-menu dropdown-primary" id="exercises">
+                        </div>
+                    </div>
+                    <!--/Blue select-->
+                </div>
+            </div>
+            <!--Footer-->
+            <div class="modal-footer justify-content-center">
+                <a type="button" id="startExercise" class="btn btn-primary waves-effect waves-light" data-dismiss="modal">Launch
+                    <i class="fas fa-plane-departure ml-1"></i>
+                </a>
+                <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Modal: Exercise Launcher -->
+<!-- Modal: Timer Launcher -->
+<div class="modal fade right" id="timerLauncher" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-full-height modal-right modal-notify modal-primary" role="document">
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header tempting-azure-gradient">
+                <p class="heading lead">Launch Timer
+                </p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="white-text">×</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body">
+                <div class="text-center">
+                    <i class="fal fa-hourglass-end fa-4x mb-3 animated rotateIn"></i>
+                    <p>
+                        <strong>Exercise Timer</strong>
+                    </p>
+                    <p>Define the parameters for the exercise length.
+                        <strong>
+                    </p>
+                    <p>
+                        </strong>Press "Launch" to begin the timer for the class.</strong>
+                    </p>
+                </div>
+                <hr>
+                <div class="dropdown">
+
+                    <!--Trigger-->
+                    <button class="btn btn-block night-fade-gradient dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Exercise Length</button>
+
+
+                    <!--Menu-->
+                    <div class="dropdown-menu dropdown-primary">
+
+                        <a class="dropdown-item" href="#" id="fiveMinTimer">05:00</a>
+                        <a class="dropdown-item" href="#" id="tenMinTimer">10:00</a>
+                        <a class="dropdown-item" href="#" id="fifteenMinTimer">15:00</a>
+                        <a class="dropdown-item" href="#" id="twentyMinTimer">20:00</a>
+                        <a class="dropdown-item" href="#" id="twentyfiveMinTimer">25:00</a>
+                        <a class="dropdown-item" href="#" id="thirtyMinTimer">30:00</a>
+                        <a class="dropdown-item" href="#" id="thirtyfiveMinTimer">35:00</a>
+                        <a class="dropdown-item" href="#" id="fortyMinTimer">40:00</a>
+                        <a class="dropdown-item" href="#" id="fortyfiveMinTimer">45:00</a>
+                        <a class="dropdown-item" href="#" id="fiftyMinTimer">50:00</a>
+                        <a class="dropdown-item" href="#" id="fiftyfiveMinTimer">55:00</a>
+                        <a class="dropdown-item" href="#" id="sixtyMinTimer">60:00</a>
+                    </div>
+                </div>
+                <!--/Dropdown primary-->
+                <!--/Blue select-->
+            </div>
+            <!--Footer-->
+            <div class="modal-footer justify-content-center">
+                <a type="button" class="btn btn-primary waves-effect waves-light" id="timerActivate" data-dismiss="modal">Launch
+                    <i class="fas fa-plane-departure ml-1"></i>
+                </a>
+                <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Modal: Timer Launcher -->
+
+
+<!-- Modal: Homework Launcher -->
+<div class="modal fade left" id="homeworkLauncher" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-full-height modal-left modal-notify modal-primary" role="document">
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header tempting-azure-gradient">
+                <p class="heading lead">Launch Homework
+                </p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="white-text">×</span>
+                </button>
+            </div>
+            <!--Body-->
+            <div class="modal-body">
+                <div class="text-center">
+                    <i class="fal fa-terminal fa-4x mb-3 animated rotateIn"></i>
+                    <p>
+                        <strong>Choose an Assignment</strong>
+                    </p>
+                    <p>Select a Module to display assignments.
+                        <strong>
+                    </p>
+                    <p>
+                        </strong>Press "Launch" to deploy the assignment to the class.</strong>
+                    </p>
+                </div>
+                <hr>
+                <div class="md-form form-sm mb-5">
+                    <!--Blue select-->
+                    <select class="mdb-select colorful-select dropdown-primary">
+                        {{#each module}}
+                        <option data-id="{{module}}">{{info}}</option>
+                        {{/each}}
+                    </select>
+                    <label>Module</label>
+                    <!--/Blue select-->
+                </div>
+                <div class="md-form form-sm mb-4">
+                    <!--Blue select-->
+                    <select class="mdb-select colorful-select dropdown-primary">
+                        {{#each title}}
+                        <option data-id="{{title}}">{{title}}</option>
+                        {{/each}}
+                    </select>
+                    <label>Assignment</label>
+                    <!--/Blue select-->
+                </div>
+            </div>
+            <!--Footer-->
+            <div class="modal-footer justify-content-center">
+                <a type="button" class="btn btn-primary waves-effect waves-light" data-dismiss="modal">Launch
+                    <i class="fas fa-plane-departure ml-1"></i>
+                </a>
+                <a type="button" class="btn btn-outline-primary waves-effect" data-dismiss="modal">Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Modal: Homework Launcher -->
